@@ -1,0 +1,11 @@
+numpy
+scipy
+tqdm
+lpips
+mmcv
+imageio
+imageio-ffmpeg
+opencv-python
+torch_efficient_distloss
+open3d
+wandb
