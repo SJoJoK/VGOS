@@ -62,3 +62,15 @@ We conduct our experiments with torch 1.13.0+cu117 and torch-scatter 2.1.0+pt113
 ## Acknowledgement
 
 The code base is heavily based on [DVGOv2](https://github.com/sunset1995/DirectVoxGO) implementation, and the computation of depth smoothness loss is modified from [RegNeRF](https://github.com/google-research/google-research/tree/master/regnerf). Thanks for sharing!
+## Citation 
+
+If you find this repo is helpful, please cite:
+
+```
+@InProceedings{sun2023vgos,
+      title={VGOS: Voxel Grid Optimization for View Synthesis from Sparse Inputs}, 
+      author={Jiakai Sun and Zhanjie Zhang and Jiafu Chen and Guangyuan Li and Boyan Ji and Lei Zhao and Wei Xing},
+      year={2023},
+      journal={arXiv preprint arXiv:2304.13386}
+}
+```
