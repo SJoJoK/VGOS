@@ -1,5 +1,7 @@
 # VGOS
 
+[Paper](https://arxiv.org/abs/2304.13386) | [Supplementary Material](https://drive.google.com/file/d/1UtD0FRv9y0qusWXjP97995XWqgT4NpfV/view?usp=share_link)
+
 Official code for the IJCAI 2023 paper "VGOS: Voxel Grid Optimization for View Synthesis from Sparse Inputs".
 
 ## Installation
