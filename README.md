@@ -63,7 +63,7 @@ We conduct our experiments with torch 1.13.0+cu117 and torch-scatter 2.1.0+pt113
   Please note that the random selection of training views may result in fluctuations in performance. Therefore, the metrics presented for comparisons in our paper are the average scores of five experiments with different viewpoint samples. It is common to observe results that are slightly different, either higher or lower, than those presented in the paper.
 ## Acknowledgement
 
-The code base is heavily based on [DVGOv2](https://github.com/sunset1995/DirectVoxGO) implementation, and the computation of depth smoothness loss is modified from [RegNeRF](https://github.com/google-research/google-research/tree/master/regnerf). Thanks for sharing!
+The code is heavily based on [DVGOv2](https://github.com/sunset1995/DirectVoxGO) implementation, and the computation of depth smoothness loss is modified from [RegNeRF](https://github.com/google-research/google-research/tree/master/regnerf). Thanks for sharing!
 ## Citation 
 
 If you find this repo is helpful, please cite:
