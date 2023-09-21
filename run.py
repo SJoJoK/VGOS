@@ -160,8 +160,8 @@ def config_parser():
                         help='before which step to stop logging voxel (every 100 step)')
     parser.add_argument("--i_val",   type=int, default=2000,
                         help='frequency of validation')
-    parser.add_argument("--i_random_val",   type=int, default=2000,
-                        help='frequency of validation (randomly)')
+    parser.add_argument("--i_random_val",   type=int, default=1000000,
+                        help='(DEPRECATED) frequency of validation')
     parser.add_argument("--i_save_val_img",   action='store_true',
                         help='whether to save the val img')
     parser.add_argument("--i_render_index",   type=int, default=0,
@@ -1145,7 +1145,7 @@ def scene_rep_reconstruction(args, cfg, cfg_model, cfg_train,
                 
         if global_step%args.i_random_val==0 and not args.no_log:
             with torch.no_grad():
-                i_random_val=np.array([0,1,2,3,24,25,14,61])
+                i_random_val=np.array([0,1,2])
                 rgbs, depths, bgmaps, psnrs, ssims, lpips_alex, lpips_vgg = render_viewpoints_and_metric(
                     render_poses=poses[i_random_val],
                     HW=HW[i_random_val],
