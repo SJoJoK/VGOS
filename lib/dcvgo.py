@@ -265,7 +265,7 @@ class DirectContractedVoxGO(nn.Module):
         @rays_d:   [N, 3] the shooting direction of the N rays.
         @viewdirs: [N, 3] viewing direction to compute positional embedding for MLP.
         '''
-        assert len(rays_o.shape)==2 and rays_o.shape[-1]==3, 'Only suuport point queries in [N, 3] format'
+        assert len(rays_o.shape)==2 and rays_o.shape[-1]==3, 'Only support point queries in [N, 3] format'
         if isinstance(self._fast_color_thres, dict) and global_step in self._fast_color_thres:
             print(f'dcvgo: update fast_color_thres {self.fast_color_thres} => {self._fast_color_thres[global_step]}')
             self.fast_color_thres = self._fast_color_thres[global_step]

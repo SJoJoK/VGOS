@@ -311,7 +311,7 @@ class DirectVoxGO(torch.nn.Module):
         @rays_d:   [N, 3] the shooting direction of the N rays.
         @viewdirs: [N, 3] viewing direction to compute positional embedding for MLP.
         '''
-        assert len(rays_o.shape)==2 and rays_o.shape[-1]==3, 'Only suuport point queries in [N, 3] format'
+        assert len(rays_o.shape)==2 and rays_o.shape[-1]==3, 'Only support point queries in [N, 3] format'
 
         ret_dict = {}
         N = len(rays_o)
@@ -402,9 +402,9 @@ class DirectVoxGO(torch.nn.Module):
                     reduce='sum')
             ret_dict.update({'depth': depth})
         
-        # As it's non-trival to obatin normal from DVGO's rendering, we leave depth here.
+        # As it's non-trivial to obtain normal from DVGO's rendering, we leave depth here.
         if render_kwargs.get('render_normal', False):
-            warnings.warn("As it's non-trival to obatin normal from DVGO's rendering, we return depth instead.") 
+            warnings.warn("As it's non-trivial to obtain normal from DVGO's rendering, we return depth instead.") 
             ret_dict.update({'normal':depth}) 
              
         ret_dict.update({
