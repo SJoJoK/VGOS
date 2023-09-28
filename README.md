@@ -1,6 +1,6 @@
 # VGOS
 
-[Paper](https://arxiv.org/abs/2304.13386) | [Supplementary Material](https://drive.google.com/file/d/1UtD0FRv9y0qusWXjP97995XWqgT4NpfV/view?usp=share_link)
+[Paper](https://www.ijcai.org/proceedings/2023/157) | [Supplementary Material](https://drive.google.com/file/d/1UtD0FRv9y0qusWXjP97995XWqgT4NpfV/view?usp=share_link)
 
 Official code for the IJCAI 2023 paper "VGOS: Voxel Grid Optimization for View Synthesis from Sparse Inputs".
 
@@ -69,10 +69,18 @@ The code is heavily based on [DVGOv2](https://github.com/sunset1995/DirectVoxGO)
 If you find this repo is helpful, please cite:
 
 ```
-@InProceedings{sun2023vgos,
-      title={VGOS: Voxel Grid Optimization for View Synthesis from Sparse Inputs}, 
-      author={Jiakai Sun and Zhanjie Zhang and Jiafu Chen and Guangyuan Li and Boyan Ji and Lei Zhao and Wei Xing},
-      year={2023},
-      journal={arXiv preprint arXiv:2304.13386}
+@inproceedings{ijcai2023p157,
+  title     = {VGOS: Voxel Grid Optimization for View Synthesis from Sparse Inputs},
+  author    = {Sun, Jiakai and Zhang, Zhanjie and Chen, Jiafu and Li, Guangyuan and Ji, Boyan and Zhao, Lei and Xing, Wei},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on
+               Artificial Intelligence, {IJCAI-23}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Edith Elkind},
+  pages     = {1414--1422},
+  year      = {2023},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2023/157},
+  url       = {https://doi.org/10.24963/ijcai.2023/157},
 }
 ```
