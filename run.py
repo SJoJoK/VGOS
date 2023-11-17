@@ -145,9 +145,9 @@ def config_parser():
     # logging/saving options
     parser.add_argument("--no_log", action='store_true')
     parser.add_argument("--i_print",   type=int, default=1000,
-                        help='frequency of console printout and metric loggin')
+                        help='frequency of console printout and metric logging')
     parser.add_argument("--i_detail_before",   type=int, default=0,
-                        help='before which step to stop print detialed metric (every 10 step)')
+                        help='before which step to stop print detailed metric (every 10 step)')
     parser.add_argument("--i_render",   type=int, default=1000,
                         help='frequency of save the render result')
     parser.add_argument("--i_detail_render_before",   type=int, default=0,
@@ -1366,7 +1366,7 @@ if __name__=='__main__':
     cfg = mmcv.Config.fromfile(args.config)
     if args.config_override:
         cfg=cfg_override(args,cfg)
-    # init enviroment
+    # init environment
     if torch.cuda.is_available():
         torch.set_default_tensor_type('torch.cuda.FloatTensor')
         device = torch.device('cuda')
@@ -1421,7 +1421,7 @@ if __name__=='__main__':
     if not args.render_only:
         train(args, cfg, data_dict,writer)
 
-    # load model for rendring
+    # load model for rendering
     if args.render_test or args.render_train or args.render_video or args.render_test_get_metric or args.render_test_result or args.render_video_with_normal:
         if args.ft_path:
             ckpt_path = args.ft_path
